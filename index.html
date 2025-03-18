@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tran Le Anh Pha - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body { font-family: 'Inter', sans-serif; }
+      .gradient-bg {
+      background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+      }
+      .hover-scale {
+      transition: transform 0.2s;
+      }
+      .hover-scale:hover {
+      transform: scale(1.02);
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4F46E5",
+              secondary: "#6B7280",
+            },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-50">
+    <div class="max-w-5xl mx-auto p-8">
+      <header
+        class="gradient-bg rounded-lg shadow-lg p-12 mb-8 text-white hover-scale"
+      >
+        <div class="flex flex-col items-start gap-6">
+          <h1 class="text-4xl font-bold font-['Poppins']">Tran Le Anh Pha</h1>
+          <p class="text-lg text-gray-100 max-w-2xl">
+            Passionate Computer Science student with a focus on AI and
+            problem-solving. Seeking opportunities to contribute to innovative
+            projects while continuously learning and growing in the tech field.
+          </p>
+          <div class="flex flex-wrap gap-6 text-gray-100">
+            <div class="flex items-center gap-2">
+              <i class="ri-map-pin-line"></i>
+              <span>Ho Chi Minh City, Vietnam</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="ri-phone-line"></i>
+              <span>0379180035</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="ri-mail-line"></i>
+              <span>24521287@gm.uit.edu.vn</span>
+            </div>
+            <a
+              href="https://github.com/anhphant"
+              class="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+            >
+              <i class="ri-github-line" style="color: #fff;"></i>
+              <span style="color: #fff;">Github</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <section class="bg-white rounded-lg shadow-lg p-8 mb-8 hover-scale">
+        <h2 class="text-2xl font-semibold mb-6 font-['Poppins'] text-primary">
+          Technical Expertise
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-4 rounded-lg bg-gray-50">
+            <i class="ri-code-line text-2xl text-primary mb-3"></i>
+            <h3 class="font-medium mb-2">Algorithm Design</h3>
+            <p class="text-gray-600">
+              Strong foundation in data structures and algorithmic
+              problem-solving
+            </p>
+          </div>
+          <div class="p-4 rounded-lg bg-gray-50">
+            <i class="ri-ai-generate text-2xl text-primary mb-3"></i>
+            <h3 class="font-medium mb-2">AI/ML</h3>
+            <p class="text-gray-600">
+              Experience with machine learning fundamentals and AI applications
+            </p>
+          </div>
+          <div class="p-4 rounded-lg bg-gray-50">
+            <i class="ri-team-line text-2xl text-primary mb-3"></i>
+            <h3 class="font-medium mb-2">Team Projects</h3>
+            <p class="text-gray-600">
+              Collaborative development and version control with Git
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white rounded-lg shadow-lg p-8 mb-8 hover-scale">
+        <h2 class="text-xl font-semibold mb-6">Education</h2>
+        <div class="space-y-6">
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-medium text-gray-900">
+                Computer Science (Talented Program)
+              </h3>
+              <p class="text-primary">
+                University of Information Technology - VNU-HCM
+              </p>
+            </div>
+            <div class="text-right">
+              <p class="text-gray-600">2024 - 2027</p>
+            </div>
+          </div>
+          <div class="flex justify-between items-start">
+            <div>
+              <h3 class="font-medium text-gray-900">High School Diploma</h3>
+              <p class="text-primary">Nui Thanh High School</p>
+              <p class="text-gray-600">GPA: 9.3/10</p>
+            </div>
+            <div class="text-right">
+              <p class="text-gray-600">2020 - 2023</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-white rounded-lg shadow-lg p-8 mb-8 hover-scale">
+        <h2 class="text-xl font-semibold mb-6">Experience</h2>
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="font-medium text-gray-900">Logistics Team Member</h3>
+            <p class="text-primary">Music Club - Nui Thanh High School</p>
+            <ul class="mt-2 space-y-2 text-gray-600">
+              <li>• Managed logistics for club activities and performances</li>
+              <li>• Participated in musical performances</li>
+              <li>• Coordinated with team members for event organization</li>
+            </ul>
+          </div>
+          <div class="text-right">
+            <p class="text-gray-600">11/2020 - 07/2023</p>
+          </div>
+        </div>
+      </section>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <section class="bg-white rounded-lg shadow-lg p-8 hover-scale">
+          <h2 class="text-xl font-semibold mb-6">Skills</h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-medium text-gray-900 mb-2">
+                Programming Languages
+              </h3>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >C++</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >Python</span
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-900 mb-2">Technologies</h3>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >Github</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >ChatGPT</span
+                >
+              </div>
+            </div>
+            <div>
+              <h3 class="font-medium text-gray-900 mb-2">Soft Skills</h3>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >Presentation</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >Teamwork</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >English Proficiency</span
+                >
+                <span
+                  class="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm"
+                  >Event Organization</span
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-white rounded-lg shadow-lg p-8 hover-scale">
+          <h2 class="text-xl font-semibold mb-6 font-['Poppins'] text-primary">
+            Achievements & Certifications
+          </h2>
+          <div class="space-y-6">
+            <div class="p-4 rounded-lg bg-gray-50">
+              <div class="flex items-center gap-3 mb-2">
+                <i class="ri-medal-line text-xl text-primary"></i>
+                <h3 class="font-medium text-gray-900">
+                  National Student Competition 2024
+                </h3>
+              </div>
+              <p class="text-primary">Consolation Prize</p>
+              <p class="text-gray-600 mt-2">
+                Recognized for innovative solution in algorithmic
+                problem-solving
+              </p>
+            </div>
+            <div class="p-4 rounded-lg bg-gray-50">
+              <div class="flex items-center gap-3 mb-2">
+                <i class="ri-trophy-line text-xl text-primary"></i>
+                <h3 class="font-medium text-gray-900">
+                  National Youth Informatics Competition 2023
+                </h3>
+              </div>
+              <p class="text-primary">Second Prize</p>
+              <p class="text-gray-600 mt-2">
+                Demonstrated excellence in competitive programming
+              </p>
+            </div>
+            <div class="p-4 rounded-lg bg-gray-50">
+              <div class="flex items-center gap-3 mb-2">
+                <i class="ri-target-line text-xl text-primary"></i>
+                <h3 class="font-medium text-gray-900">Career Objective</h3>
+              </div>
+              <p class="text-gray-600 mt-2">
+                With strong problem-solving abilities and solid foundational
+                knowledge, I aim to apply these skills in practical projects
+                while participating in the AI Club.
+              </p>
+              <button
+                class="mt-4 px-4 py-2 text-sm text-primary border border-primary hover:bg-primary hover:text-white transition-colors duration-200 !rounded-button flex items-center gap-2"
+              >
+                <i class="ri-add-line"></i>
+                <span>More Details</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script>
+      document.querySelector("button").addEventListener("click", function () {
+        const modal = document.createElement("div");
+        modal.className =
+          "fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50";
+        modal.innerHTML = `
+          <div class="bg-white p-6 rounded-lg max-w-lg w-full mx-4">
+            <div class="flex justify-between items-center mb-4">
+              <h3 class="text-xl font-semibold text-gray-900">Career Objective Details</h3>
+              <button class="text-gray-500 hover:text-gray-700">
+                <i class="ri-close-line text-xl"></i>
+              </button>
+            </div>
+            <div class="text-gray-600 space-y-4">
+              <p>I am passionate about artificial intelligence and its applications in solving real-world problems. My goal is to:</p>
+              <ul class="list-disc pl-5 space-y-2">
+                <li>Develop expertise in machine learning and deep learning</li>
+                <li>Contribute to innovative AI projects that make a positive impact</li>
+                <li>Collaborate with like-minded individuals in the AI community</li>
+                <li>Build a strong foundation in both theoretical and practical aspects of AI</li>
+              </ul>
+            </div>
+          </div>
+        `;
+
+        document.body.appendChild(modal);
+
+        modal.querySelector("button").onclick = function () {
+          modal.remove();
+        };
+
+        modal.onclick = function (e) {
+          if (e.target === modal) {
+            modal.remove();
+          }
+        };
+      });
+    </script>
+  </body>
+</html>
